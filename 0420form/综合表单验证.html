@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.min.css" ;>
+</head>
+<style type="text/css">
+    .wrap {
+        box-shadow: 0 0 1px black;
+        height: 50px;
+        padding: 0;
+        margin-left: 15px;
+    }
+
+    .wrap .progerss {
+        width: 0px;
+        height: 50px;
+        background: green;
+        border: none;
+        border-radius: 0;
+    }
+
+    .wrap .dragbox {
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: center;
+        width: 40px;
+        background: #D9D9D9;
+        height: 50px;
+        line-height: 50px;
+        cursor: pointer;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .wrap .dragbox.success {
+        background: lightgreen;
+    }
+    .input-boxerror{border-color: crimson;color: red;}
+    .input-boxture{border-color:#50B9FD;color: #555;}
+    .tagspan{
+        font-size: 14px; font-weight: 600;
+    }
+</style>
+<body>
+<div class="container" style="margin-top: 50px;">
+    <div class="row">
+        <div class="col col-lg-12 ">
+            <div class="page-header ">
+                <h1>Example page header
+                    <small>Subtext for header</small>
+                </h1>
+            </div>
+        </div>
+        <div class="col col-lg-12 ">
+            <form class="form-horizontal" >
+                <div class="form-group">
+                    <label  class="col-sm-2  control-label"><h4>用户名</h4></label>
+                    <div class="col-lg-8">
+                        <input type="email" class="form-control input-lg" id="userName" placeholder="用户名4到12位不能含有特殊符号">
+                    </div>
+                    <span class="help-block col-lg-1 col-lg-offset-2">必填</span>
+                    <span   class="help-block col-lg-6 ">
+                        4到12位不能含有特殊符号
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"><h4>密码</h4></label>
+                    <div class="col-lg-8">
+                        <input type="email" class="form-control input-lg" id="password" placeholder="密码"><i alt=""></i>
+                    </div>
+                    <span class="help-block col-lg-1 col-lg-offset-2">必填</span>
+                    <span   class="help-block col-lg-2 ">
+                        请输入密码8到16位
+                    </span>
+                    <span id="tagpassword"  class="help-block col-lg-3 tagspan">
+
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label"><h4>确认密码</h4></label>
+                    <div class="col-lg-8">
+                        <input type="email" class="form-control input-lg" id="repassword" placeholder="确认密码"><i alt=""></i>
+                    </div>
+                    <span class="help-block col-lg-1 col-lg-offset-2">必填</span>
+                    <span   class="help-block col-lg-2 ">
+                        请再次输入密码
+                    </span>
+                    <span id="tagrepassword"  class="help-block col-lg-3 tagspan">
+
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label"><h4>身份证</h4></label>
+                    <div class="col-lg-8">
+                        <input type="email" class="form-control input-lg" id="IdCard" placeholder="身份证"><i alt=""></i>
+
+                    </span>
+                    </div>
+                    <span class="help-block col-lg-1 col-lg-offset-2">必填</span>
+                    <span   class="help-block col-lg-6 ">
+                        请输入18位二代身份证号码
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label"><h4>邮箱</h4></label>
+                    <div class="col-lg-8">
+                        <input type="email" class="form-control input-lg" id="inputEmail" placeholder="Email">
+                    </div>
+                    <span class="help-block col-lg-1 col-lg-offset-2">必填</span>
+                    <span   class="help-block col-lg-6">
+                        请输入正确的国内注册邮箱账号
+                    </span>
+                </div>
+                <!--<div class="form-group">-->
+                    <!--<label class="col-sm-2 control-label"><h4>个人主页</h4></label>-->
+                    <!--<div class="col-lg-8">-->
+                        <!--<input type="email" class="form-control input-lg" id="blog" placeholder="个人主页网址">-->
+                    <!--</div>-->
+                    <!--<span   class="help-block col-lg-8 col-lg-offset-2">-->
+                        <!--A block of help text that breaks onto a new line and may extend beyond one line.-->
+                    <!--</span>-->
+                <!--</div>-->
+                <div class="form-group has-success">
+                    <label  class="col-sm-2 control-label"><h4>手机号</h4></label>
+                    <div class="col-lg-8">
+                        <input type="email" class="form-control input-lg" id="phone" placeholder="手机号">
+                    </div>
+                    <span class="help-block col-lg-1 col-lg-offset-2">必填</span>
+                    <span   class="help-block col-lg-6">
+                        A block of help text that breaks onto a new line and may extend beyond one line.
+                    </span>
+                </div>
+                <!--<div class="form-group has-warning">-->
+                    <!--<label for="inputEmail3" class="col-sm-2 control-label"><h4>邮政编码</h4></label>-->
+                    <!--<div class="col-lg-8">-->
+                        <!--<input type="email" class="form-control input-lg" id="inputEmail3" placeholder="邮政编码">-->
+                    <!--</div>-->
+                    <!--<span   class="help-block col-lg-8 col-lg-offset-2">-->
+                        <!--A block of help text that breaks onto a new line and may extend beyond one line.-->
+                    <!--</span>-->
+                <!--</div>-->
+                <!--<div class="form-group has-error">-->
+                    <!--<label for="inputEmail3" class="col-sm-2 control-label"><h4>随便写</h4></label>-->
+                    <!--<div class="col-lg-8">-->
+                        <!--<input type="email" class="form-control input-lg" id="alltext" placeholder="Email">-->
+                    <!--</div>-->
+                    <!--<span   class="help-block col-lg-8 col-lg-offset-2">-->
+                        <!--A block of help text that breaks onto a new line and may extend beyond one line.-->
+                    <!--</span>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<label for="inputEmail3" class="col-sm-2 control-label"><h4>验证</h4></label>-->
+                    <!--<div class="wrap col-lg-5">-->
+                        <!--<div class="progerss panel"></div>-->
+                        <!--<div class="dragbox panel"> >></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="form-group">
+                    <div class="col-lg-offset-2 col-sm-3">
+                        <div id="btn" class="btn btn-primary btn-lg col-lg-12">
+                            注册
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="regexp.js" type="text/javascript" charset="utf-8"></script>
+
+<!--&lt;!&ndash;<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;<script src="../js/draggable.js" type="text/javascript" charset="utf-8"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;<script type="text/javascript">&ndash;&gt;-->
+    <!--&lt;!&ndash;var dragbox = $(".dragbox")[0];&ndash;&gt;-->
+    <!--&lt;!&ndash;draggable(dragbox, {&ndash;&gt;-->
+        <!--&lt;!&ndash;y: false, callback: function (section, distance) {&ndash;&gt;-->
+            <!--&lt;!&ndash;this.previousElementSibling.style.width = distance.x + "px";&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+    <!--&lt;!&ndash;});&ndash;&gt;-->
+<!--</script>-->
+</body>
+</html>
