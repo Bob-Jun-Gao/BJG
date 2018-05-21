@@ -1,0 +1,195 @@
+@charset "UTF-8";
+body {
+  background: #f5f5f5; }
+
+.listname, .sidebar_item, .list_content_head {
+  background: #FFF; }
+
+.listname {
+  height: 70px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  line-height: 70px;
+  font-size: 32px; }
+
+.list_body {
+  overflow: hidden; }
+
+/*侧导航*/
+.list_sidebar {
+  position: relative;
+  width: 267px;
+  overflow: hidden; }
+
+.sidebar_item {
+  padding: 0 10px;
+  margin-bottom: 10px; }
+  .sidebar_item .sidebar_item_head {
+    height: 52px;
+    line-height: 52px; }
+    .sidebar_item .sidebar_item_head span {
+      display: block;
+      font-size: 14px; }
+    .sidebar_item .sidebar_item_head .add_icon {
+      font-size: 24px;
+      font-weight: 400;
+      font-family: "宋体";
+      cursor: pointer; }
+
+.sider-maxheight {
+  max-height: 250px;
+  overflow-x: hidden; }
+
+.sider_item_body {
+  display: none;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-top: 1px solid #e8e8e8; }
+
+.sidebar_secondary, .sider_item_content {
+  padding-left: 5px; }
+
+.sidebar_secondary_head a, .sider_item_content a {
+  position: relative;
+  display: block;
+  padding: 5px 0 5px 20px;
+  line-height: 18px;
+  overflow: hidden; }
+  .sidebar_secondary_head a em, .sider_item_content a em {
+    position: absolute;
+    display: block;
+    width: 14px;
+    height: 14px;
+    top: 7px;
+    left: 0; }
+
+.click_em {
+  background: url(../../img/listico.gif) no-repeat 0px -14px; }
+
+.check_em {
+  background: url(../../img/listico.gif) no-repeat; }
+
+.sidebar_secondary_body {
+  padding-left: 20px;
+  overflow: hidden; }
+  .sidebar_secondary_body li {
+    overflow: hidden; }
+
+/*商品内容区*/
+.list_content, .list_content_head, .list_content_body {
+  position: relative;
+  width: 923px;
+  overflow: hidden; }
+
+.range {
+  display: inline-block;
+  height: 55px;
+  padding-left: 55px;
+  line-height: 55px; }
+  .range ul li {
+    float: left;
+    color: #555;
+    font-weight: 700; }
+  .range ul a {
+    float: left;
+    display: block;
+    margin-left: 35px;
+    padding-right: 12px;
+    color: #666;
+    font-weight: 400; }
+
+/*--------------------------
+-------分页pagination-------
+--------------------------*/
+.pagiation {
+  margin-top: 18px; }
+  .pagiation span, .pagiation a {
+    float: left;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 18px; }
+  .pagiation .pagiation_active {
+    color: #FFF;
+    background: #333;
+    border-radius: 2px; }
+  .pagiation .pagiation_prev {
+    background: url(../../img/pagination.gif) no-repeat; }
+  .pagiation .pagiation_next {
+    background: url(../../img/pagination.gif) no-repeat -20px 0px; }
+
+.bottom_pagiation {
+  padding-top: 5px;
+  margin-bottom: 20px; }
+
+/*商品展示区域*/
+.list_content_body {
+  position: relative; }
+
+.product_main {
+  position: relative;
+  width: 923px;
+  margin-top: 5px; }
+
+.product_list {
+  display: block;
+  margin: 0px -5px 0 0; }
+  .product_list li {
+    float: left;
+    width: 205px;
+    height: 371px;
+    padding: 10px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #FFF;
+    background: #FFF; }
+    .product_list li a {
+      display: block; }
+
+.product_img_link {
+  width: 207px;
+  height: 230px;
+  text-align: center;
+  padding-top: 10px; }
+  .product_img_link img {
+    width: 180px; }
+
+.product-tips {
+  height: 28px;
+  margin-top: 8px;
+  padding: 0 20px; }
+
+.product_tit_link {
+  height: 45px;
+  padding: 0 20px 9px 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+  .product_tit_link span {
+    line-height: 24px;
+    color: #333;
+    font-weight: 700;
+    cursor: pointer; }
+
+.product_sale {
+  width: 165px;
+  height: 26px;
+  padding: 0 20px 15px 20px; }
+  .product_sale span {
+    line-height: 16px;
+    color: #999; }
+
+#Loading {
+  display: none;
+  position: absolute;
+  width: 923px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  top: 0;
+  left: 0; }
+  #Loading img {
+    position: absolute;
+    left: 50%;
+    margin-left: -21px; }

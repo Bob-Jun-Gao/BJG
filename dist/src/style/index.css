@@ -1,0 +1,69 @@
+/*主题内容*/
+.container{}
+/*轮播*/
+.slider_wrap{position:relative;width:100%;height: 600px; overflow: hidden; }
+.slider{position: absolute;height: 600px;}
+.slider_box{ position: absolute}
+.slider_prev,.slider_next{
+    position: absolute;
+    width: 27px;
+    height: 66px;
+    top: 50%;
+    margin-top: -33px;
+    cursor: pointer;
+}
+.slider_prev{ left: 10px; background: url(../../img/jt7.png) 0px -201px no-repeat;z-index: 100;}
+.slider_next{ right: 10px; background: url(../../img/jt7.png) 0px -134px no-repeat;z-index: 100;}
+.slider_active{z-index: 10;}
+/*推荐*/
+.recommendation_wrap{overflow: hidden;}
+.recommendation{height:54px; margin: 23px 0 10px 0;}
+.recommendation p {
+    display:block;
+    height:24px;
+    line-height:24px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.recommendation_content{clear: both;}
+.recommendation_b{ margin-top: 12px;}
+.recommendation_c{margin: 0 12px;}
+
+.sale_recommendation{position: relative; height: 54px;margin: 30px 0 10px 0;}
+.sale_recommendation p{
+    display:block;
+    width: 260px;
+    height: 48px;
+    margin: 0px auto;
+    text-align: center;
+    background: #fff;
+}
+.sale_recommendation p .zn_title{font-size: 16px; line-height:24px; color: #666;}
+.sale_recommendation p .en_title{font-size: 14px; line-height:21px; color: #999;}
+.border_bottom{position:absolute; top: 24px; left: 0; width: 100%; border-bottom: 1px solid #e8e8e8; z-index: -1;}
+/*热卖滚动条*/
+.sale_sroll{position:relative;height: 265px;}
+
+.sale_prev,.sale_next{ position: absolute; width:17px; height: 265px; background: #FFF; z-index: 9;}
+.sale_prev{left: 0px;}
+.sale_next{right: 0px;}
+.sale_btn_prev,.sale_btn_next{ position: absolute;width: 17px;  height: 38px;  top: 100px; cursor: pointer;z-index: 5;}
+.sale_btn_prev{background: url(../../img/pre_btn.png) no-repeat}
+.sale_btn_next{background: url(../../img/next_btn.png) no-repeat}
+
+.sale_sroll_content{width:1200px;height: 265px;}
+.sale_sroll_content ul{display: block;width:7200px; overflow: hidden;}
+.sale_sroll_content li{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 160px;
+    height: 260px;
+    padding: 5px 20px 0 20px;
+    text-align: center;
+}
+.sale_sroll_content li img{ width:160px;height: 192px;}
+.sale_sroll_content li .div

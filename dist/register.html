@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="src/style/main.css">
+    <link rel="stylesheet" href="src/style/header.css">
+    <link rel="stylesheet" href="src/style/login.css">
+    <link rel="stylesheet" href="src/style/footer.css">
+</head>
+<body>
+    <div class="head_wrap">
+        <div class="head">
+            <a class="logo float_l" href="javascript:void(0)">
+                <div></div>
+            </a>
+            <div class="head_r float_r">
+                <div class="hepl float_l">需要帮助？</div>
+                <div class="telephone float_l">
+                    <span></span>
+                    <div>4000-250-630</div>
+                </div>
+            </div>
+        </div>
+        <div class="headerShadow"></div>
+    </div>
+    <div class="login_container ">
+        <div class="register_form clearfix">
+            <from>
+                <div class="register_tit">注册美西账户</div>
+                <div>
+                    <div class="login_txt clearfix">
+                        <div class="long_un_icon float_l"></div>
+                        <div id="us" class=" float_l">
+                            <input type="text" placeholder="请输入用户名"/>
+                        </div>
+                    </div>
+
+                    <div class="login_txt clearfix">
+                        <div class="register_un_icon float_l"></div>
+                        <div id="ph" class=" float_l">
+                            <input type="text" placeholder="请输入手机号或邮箱"/>
+                        </div>
+                    </div>
+
+                    <div class="register_txt clearfix">
+                        <div class="register_pw_icon float_l"></div>
+                        <div id="pw" class="float_l">
+                            <input type="password" placeholder="请输入密码"/>
+                        </div>
+                    </div>
+
+                    <div  class="register_txt clearfix">
+                        <div class="register_pw_icon float_l"></div>
+                        <div id="rpw" class="float_l">
+                            <input type="password" placeholder="请再次输入密码"/>
+                        </div>
+                    </div>
+
+                    <div class="login_tip"></div>
+                    <div  class="login_login">
+                        <button type="button" id="register" >注册</button>
+                    </div>
+                    <div class="login_res">
+                        已注册？
+                        <a href="login.html">登录</a>
+                    </div>
+                </div>
+            </from>
+        </div>
+    </div>
+    <div class="footer">
+
+        <div class="footer_center">
+            <div class="footer_center_content">
+                <ul>
+                    <li class="quality">
+                        <span class="quality_img"></span>
+                        <p>100%正品保证</p>
+                    </li>
+                    <li class="seven">
+                        <span class="seven_img"></span>
+                        <p>7天无忧虑退货</p>
+                    </li>
+                    <li class="nice">
+                        <span class="nice_img"></span>
+                        <p>九年专注品质保障</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_border_bottom"></div>
+            <div class="footer_bottom">
+                <div class="bottom_txt float_l">
+                    <ul>
+                        <li class="border_none"><a href="javascript:void(0)">媒体报道</a></li>
+                        <li><a href="javascript:void(0)">正品保证</a></li>
+                        <li><a href="javascript:void(0)">业务合作</a></li>
+                        <li><a href="javascript:void(0)">隐私声明</a></li>
+                        <li><a href="javascript:void(0)">加入美西</a></li>
+                        <li><a href="javascript:void(0)">联系我们</a></li>
+                    </ul>
+                    <p>Copyright ©2008-2018，美西-高端时尚生活电商</p>
+                    <span>沪ICP备09001221号</span>
+                    <span>沪公网安备11010802017116号</span>
+
+                </div>
+                <div class="bottom_img float_l"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="src/lib/require.js"></script>
+<script>
+    require(["src/lib/require.config"],function(){
+        require(["js/usermain"])
+    })
+</script>
+
+</html>

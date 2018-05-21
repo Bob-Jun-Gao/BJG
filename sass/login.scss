@@ -1,0 +1,232 @@
+$width-g :1200px;
+$bg-g : #FFF;
+$border-color:#E8E8E8;
+body{min-width: $width-g ;}
+.head_wrap{background: #FFF;margin-bottom: 20px;}
+.head{width:$width-g ;margin: 0 auto;}
+.head {
+  height: 146px;
+
+  .logo {
+    div{
+      width:131px;
+      height:69px;
+      margin-top:39px;
+      background: url(../../img/logo_02.png) no-repeat;
+    }
+  }
+}
+.headerShadow{
+  background: url(../../img/headerbg.png) 0 bottom repeat-x;
+  width: 100%;
+  height: 8px;
+}
+
+.head_r{
+    div{
+      position: relative;
+      line-height: 146px;
+      color: #333;
+      font-size: 14px;
+      padding-left: 23px;
+    }
+    .telephone{
+      padding-left: 15px;
+    }
+    span{
+      position: absolute;
+      display: block;
+      width:20px;
+      height: 20px;
+      top: 50%;
+      margin-top: -10px;
+      margin-right:10px;
+      background: url(../../img/headico.png) no-repeat 0px 0px;
+    }
+  }
+/*---------------------------
+----------登录form-----------
+---------------------------*/
+.login_container,.register_container{
+  position: relative;
+  height: 535px;
+  background: #fefefe url(../../img/loginbg.jpg) center 0 no-repeat;
+}
+
+.login_form , .register_form {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  margin-left: 150px;
+  width: 298px;
+  background: #fff;
+  padding: 30px 40px;
+  background: #fff;
+  border: solid 1px $border-color;
+  box-shadow: 3px 3px 7px #eee;
+}
+.login_tit,.register_tit{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+.login_txt,.register_txt{
+  border: 1px solid $border-color;
+  background: $bg-g;
+  padding:4px 0;
+  margin-bottom: 10px;
+  div{
+    position: relative;
+    width: 240px;
+    margin: 0 0 0 4px;
+  }
+  input{
+      width: 100%;
+      padding: 0;
+      border: none;
+      font-size: 14px;
+      height: 26px;
+      line-height: 26px;
+      color: #333;
+  }
+  input::-webkit-input-placeholder{font-size: 12px; color: #999;;opacity:1;}
+  .long_un_icon,.long_pw_icon,.register_un_icon,.register_pw_icon{
+    width: 26px;
+    height: 26px;
+    padding-right: 4px;
+    margin: 0 4px 0 6px;
+    border-right: solid 1px #e8e8e8;
+    background: url(../../img/memberico.gif) no-repeat;
+   }
+  .long_un_icon{
+    background: url(../../img/memberico.gif) no-repeat;
+  }
+  .long_pw_icon,.register_pw_icon{
+    background-position: -26px 0px;
+  }
+  .register_un_icon{ background-position: -52px 0;}
+
+}
+.login_auto{
+  color: #999;
+  padding: 7px 0 5px 0;
+  input{margin-top:3px;}
+  span,input{display: block;}
+}
+.login_tip{height: 30px;  }
+.login_login{
+  button{
+    display: block;
+    width:298px;
+    height: 48px;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    background: #333;
+    cursor: pointer;
+  }
+}
+.login_res{
+  width:100%;
+  height: 18px;
+  padding: 20px 0 7px 0;
+  text-align: right;
+  a{color:#669aca;}
+}
+.login_other {
+  .bottom_line {
+    width: 100%;
+    position: relative;
+    height: 20px;
+    .login_line {
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      margin-top: 8px;
+      border-bottom: 1px solid $border-color;
+    }
+    p {
+      position: relative;
+      display: block;
+      width: 110px;
+      margin: 0 auto;
+      text-align: center;
+      background: #FFF;
+      z-index: 2;
+    }
+  }
+
+  ul {
+    padding: 20px 25px 5px 25px;
+    li {
+      float: left;
+      width:50%;
+      a {
+        display: block;
+        width: 35px;
+        height: 35px;
+        background: url(../../img/jointLogin.gif) no-repeat;
+        margin: 0 auto;
+        filter: alpha(opacity=50);
+        opacity: .5;
+        transition-duration: .1s;
+        transition-timing-function: linear;
+      }
+      .login_sina{background-position: -35px 0;}
+      .login_wechat{background-position: -70px 0;}
+
+    }
+  }
+}
+
+
+
+
+
+.foot_subscription_btn {
+  width: 197px;
+  height: 49px;
+  border-radius: 2px;
+  margin: 25px auto 0;
+  background: #333;
+  line-height: 49px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*app和微信二维码*/
+.footer_app-wechat{ padding-left: 25px; border-right: none; text-align: center; width: 275px;  }
+.footer_app{width:109px; height: 150px; padding-left: 20px;}
+.footer_app p{font-size: 14px;}
+.app_img,.wechat_img{width: 67px; height: 67px; padding:20px; margin-top:20px; border:1px solid #e8e8e8;}
+.app_img span, .wechat_img span{display:block;width: 67px; height: 67px;}
+.app_img span{background: url(../../img/down_app.png)}
+.wechat_img span{background: url(../../img/wechat.png)}
+.footer_app_alt{display: block;height: 60px; line-height: 60px;}
+
+.footer_center{clear:both; height:280px;  background: #414141; }
+.footer_center_content{}
+.footer_center_content ul{ position:relative; width: 1200px; height: 138px; margin:0 auto; color: #FFF; }
+.footer_center_content ul li{ position:absolute; }
+.footer_center_content ul li span{ float: left; display:block; width: 52px; height: 52px; margin:42px 24px 0 0;}
+.footer_center_content ul li p{ float:left; font-size: 18px; line-height: 138px;}
+
+.quality{left: 0px;}
+.quality_img{background: url(../../img/footer_icon.png) no-repeat}
+.seven{left: 500px;}
+.seven_img{background: url(../../img/footer_icon.png) no-repeat -52px 0px}
+.nice{right:0px;}
+.nice_img{background: url(../../img/footer_icon.png) no-repeat -104px 0px}
+
+.footer_border_bottom{width:100%;border-top: 1px solid #4d4d4d;border-bottom: 1px solid #333;}
+.footer_bottom{width: 1200px; margin:30px auto 0 auto; }
+.bottom_txt,.bottom_img{width: 50%;color: #999;}
+.bottom_txt{border-right: 1px solid #333;}
+.bottom_txt ul{margin-left: -10px; overflow: hidden;}
+.bottom_txt ul li{float:left;width: 72px;height: 20px;border-left:1px solid #999;text-align: center;}
+.bottom_txt ul li a{color: #999;}
+.bottom_txt ul li.border_none{border-left:0px;}
+.bottom_txt p{display: block; line-height: 47px;}
+.bottom_txt span{margin-right: 20px;}
