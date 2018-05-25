@@ -1,7 +1,6 @@
 html,body{min-width: 1200px; }
 /*版型宽度*/
 .header_bar,.header_nav_bar,.header_center,.header_nav,.container,.footer_top{width:1200px;margin:0 auto;}
-
 /*头部样式*/
 .header{margin-bottom: 20px;background: #FFF;}
 .header_top{height: 35px;background: #fafafa;border-bottom: 1px solid #f5f5f5;}
@@ -9,8 +8,14 @@ html,body{min-width: 1200px; }
 .header_bar_left,.header_bar_right{height:18px;margin-top: 8px;}
 .header_bar_right .user span,.user_login span{padding: 0px 10px;}
 .user_login{display: none}
-.header_app,.header_shoppingbag{height:18px;padding-left: 15px;margin-left:25px;border-left: 1px solid #d9d9d9;}
-.header_app_code{ display:none; position: absolute; padding-top: 6px; top: 29px;}
+.header_app,.header_shoppingbag{
+    position: relative;
+    height:18px;
+    padding-left: 15px;
+    margin-left:20px;
+    border-left: 1px solid #d9d9d9;
+}
+.header_app_code{ display:none; position: absolute; padding-top: 7px; top: 18px;z-index: 9;}
 .header_app_code .code_icon{
     position: absolute;
     width:17px;
@@ -18,16 +23,17 @@ html,body{min-width: 1200px; }
     left:50%;
     top:0px;
     margin-left:-9px;
-    background:url("../../img/headico.png") no-repeat -80px -13px;
-    z-index: 9;
+    background:url("../../img/headico.png") no-repeat -80px -10px;
+    z-index: 19;
 }
 .header_app_code .code{padding:10px 10px 3px 10px; border: 1px solid #ececec;  text-align: center;}
-.header_box a{display: block;}
+.header_box a{display: inline-block;}
 i.hotline,i.app,i.shoppingbag{width: 20px; height: 20px; margin-right: 5px; float: left;}
 i.hotline{background:url("../../img/headico.png") no-repeat 0px 0px;}
 i.app{background:url("../../img/headico.png") no-repeat -20px 0px;}
-i.shoppingbag{background:url("../../img/headico.png") no-repeat -40px 0px;}
-
+i.shoppingbag{margin-right: 0px;background:url("../../img/headico.png") no-repeat -40px 0px;}
+#ShopBag span{padding:0px 4px;}
+#ShopBag span i{padding:0px 4px;}
 /*logo和搜索框*/
 .header_center {height: 99px;position: relative;}
 .header_center .header_logo{width: 360px; height: 64px; padding-top:35px; margin: 0 auto; text-align: center;}
@@ -77,7 +83,11 @@ i.shoppingbag{background:url("../../img/headico.png") no-repeat -40px 0px;}
     text-align: center;
     z-index: 99;
 }
-.secondary_nav_items_content{ padding: 25px 0 65px 0; border-top: 1px solid #ececec; background: #FFF; opacity: 0.95;}
+.secondary_nav_items_content{
+    padding: 25px 0 65px 0;
+    border-top: 1px solid #ececec;
+    background: #FFF; opacity: 0.95;
+}
 .secondary_nav_items_content ul{ display: inline-block;  width: 200px;margin: 0 30px;vertical-align: text-top; }
 .secondary_nav_items_content ul li{ padding: 7px 0;text-align: left;}
 .secondary_nav_items_content ul li a{ font-size: 14px; color: #666;  }

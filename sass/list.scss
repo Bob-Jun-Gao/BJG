@@ -147,6 +147,10 @@ body{background: $bg_color;}
     background: #FFF;
     a{display: block;}
   }
+  li:hover{
+    border:solid 1px #eee;
+    box-shadow:0 0 5px #d9d9d9;
+  }
 }
 .product_img_link{
   width: 207px;
@@ -198,5 +202,40 @@ body{background: $bg_color;}
     left: 50%;
     margin-left: -21px;
   }
+}
+
+//浮动导航
+.sideright_fixed{
+  position: fixed;
+  right: 0;
+  bottom: 100px;
+  border: solid 1px #ddd;
+  background: #fff;
+  z-index: 100;
+  ul li a {
+    display: block;
+    width: 58px;
+    height: 46px;
+    padding-top: 12px;
+    border-bottom: solid 1px #ddd;
+    em{
+      display: block;
+      width: 35px;
+      height: 35px;
+      background: url(../../img/consult.png) no-repeat;
+      margin: 0 auto;
+    }
+  }
+  a.online em {background-position: 0 -70px;}
+  a.QQ em {background-position: 0 -35px;}
+  a.go_top em {background-position: 0 -105px;}
+  ul li a:hover {background:#666;}
+  a.online em {background-position: 0 -70px;}
+  a.QQ em {background-position: 0 -35px;}
+  a.go_top em {background-position: 0 -105px;}
+  a.consult_app:hover em{background-position: -35px 0;}
+  a.online:hover em {background-position: -35px -70px;}
+  a.QQ em:hover  {background-position: -35px -35px;}
+  a.go_top:hover  em {background-position: -35px -105px;}
 }
 

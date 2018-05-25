@@ -10,19 +10,18 @@ define(["jquery"],function(){
         },
         /*header图标hover效果*/
         show(){
-            this.show_icon = $(".jqshow_icon");
-            this.hidde_icon = $(".jqhidde_icon");
-            for( var i = 0 ; i < this.show_icon.length; i ++){
-                +function(i){
-                    $(this.show_icon[i]).mouseover(function () {
-                        $(this.hidde_icon[i]).show();
-                    }.bind(this));
-                    $(this.show_icon[i]).mouseout(function () {
-                        $(this.hidde_icon[i]).hide();
-                    }.bind(this));
-                }.bind(this)(i)
-                /* 一定要记着每一层绑定bind血泪的教训*/
-            }
+            $(".jqshow_icon").mouseover(function () {
+                $(".jqhidde_icon").css({display:"block"});
+            }.bind(this));
+            $(".header_center").mouseenter(function () {
+                $(".jqhidde_icon").css({display:"none"});
+            })
+            $(".header_top").not(".header_bar_left").mouseenter(function () {
+                $(".jqhidde_icon").css({display:"none"});
+            })
+            $(".jqshow_icon").parent().mouseleave(function () {
+                $(".jqhidde_icon").css({display:"none"});
+            })
         },
         /*导航菜单效果*/
         Nav_show(){

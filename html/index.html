@@ -16,11 +16,13 @@
                 <div class="header_bar_left float_l">
                     <div class="header_hotline float_l">
                         <i class="hotline"></i>
-                        <span class="header_box float_r"><a href="javascript:void(0)">4000-250-xxx</a></span>
+                        <span class="header_box float_r"><a href="javascript:void(0)">4000-250-630</a></span>
                     </div>
                     <div class="header_app float_l">
-                        <i class="app float_l"></i>
-                        <span class="header_box jqshow_icon float_r"><a href="javascript:void(0)">下载美西APP</a></span>
+                        <span class="header_box jqshow_icon float_r">
+                            <i class="app float_l"></i>
+                            <a href="javascript:void(0)">下载美西APP</a>
+                        </span>
                         <div class="header_app_code jqhidde_icon">
                             <div class="code_icon"></div>
                             <div class="code">
@@ -40,7 +42,7 @@
                     </div>
                     <div class="header_shoppingbag float_r">
                         <i class="shoppingbag"></i>
-                        <span><a href="javascript:void(0)">购物袋</a></span>
+                        <span><a id="ShopBag" href="shoppingBag.html" target="_blank">购物袋</a></span>
                     </div>
 
                 </div>
@@ -56,13 +58,13 @@
         <div class="header_bottom">
             <div class="header_nav">
                 <ul>
-                    <li><a href="javascript:void(0)" title="首页">首页</a></li>
-                    <li><a href="javascript:void(0)" title="最新单品">最新单品</a></li>
-                    <li><a href="javascript:void(0)" title="全球购">全球购</a></li>
-                    <li><a href="javascript:void(0)" title="女士">女士</a></li>
-                    <li><a href="list.html" title="男仕">男仕</a></li>
-                    <li><a href="javascript:void(0)" title="家居生活">家居生活</a></li>
-                    <li><a href="javascript:void(0)" title="腕表">腕表</a></li>
+                    <li><a href="index.html" title="首页">首页</a></li>
+                    <li><a href="list.html?o=newDesc&p=1&ch=new&acty=0&cyc=3" target="_blank" title="最新单品">最新单品</a></li>
+                    <li><a href="list.html?o=newDesc&p=1&ch=global&acty=0&cbs=1" target="_blank" title="全球购">全球购</a></li>
+                    <li><a href="list.html?o=newDesc&p=1&ch=woman&acty=0&fp=30" target="_blank" title="女士">女士</a></li>
+                    <li><a href="list.html?o=newDesc&p=1&ch=man&acty=0&fp=20" target="_blank" title="男仕">男仕</a></li>
+                    <li><a href="list.html?o=newDesc&p=1&ch=lifestyle&acty=0&ca=9%2C264%2C279%2C290%2C294" target="_blank" title="家居生活">家居生活</a></li>
+                    <li><a href="list.html?o=newDesc&p=1&ch=watch&acty=0&ca=10" target="_blank"  title="腕表">腕表</a></li>
                     <li><a href="javascript:void(0)" title="品牌">品牌</a></li>
                     <li><a href="javascript:void(0)" title="Mzine">Mzine</a></li>
                 </ul>
@@ -529,8 +531,6 @@
     require(["src/lib/require.config"],function(){
         require(["js/main"])
     })
-
-
 </script>
 
 

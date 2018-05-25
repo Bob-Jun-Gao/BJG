@@ -15,11 +15,13 @@
             <div class="header_bar_left float_l">
                 <div class="header_hotline float_l">
                     <i class="hotline"></i>
-                    <span class="header_box float_r"><a href="javascript:void(0)">4000-250-xxx</a></span>
+                    <span class="header_box float_r"><a href="javascript:void(0)">4000-250-630</a></span>
                 </div>
                 <div class="header_app float_l">
-                    <i class="app float_l"></i>
-                    <span class="header_box jqshow_icon float_r"><a href="javascript:void(0)">下载美西APP</a></span>
+                    <span class="header_box jqshow_icon float_r">
+                        <i class="app float_l"></i>
+                        <a href="javascript:void(0)">下载美西APP</a>
+                    </span>
                     <div class="header_app_code jqhidde_icon">
                         <div class="code_icon"></div>
                         <div class="code">
@@ -39,7 +41,7 @@
                 </div>
                 <div class="header_shoppingbag float_r">
                     <i class="shoppingbag"></i>
-                    <span><a href="javascript:void(0)">购物袋</a></span>
+                    <span><a id="ShopBag" href="shoppingBag.html" target="_blank">购物袋</a></span>
                 </div>
 
             </div>
@@ -55,13 +57,13 @@
     <div class="header_bottom">
         <div class="header_nav">
             <ul>
-                <li><a href="javascript:void(0)" title="首页">首页</a></li>
-                <li><a href="javascript:void(0)" title="最新单品">最新单品</a></li>
-                <li><a href="javascript:void(0)" title="全球购">全球购</a></li>
-                <li><a href="javascript:void(0)" title="女士">女士</a></li>
-                <li><a href="javascript:void(0)" title="男仕">男仕</a></li>
-                <li><a href="javascript:void(0)" title="家居生活">家居生活</a></li>
-                <li><a href="javascript:void(0)" title="腕表">腕表</a></li>
+                <li><a href="index.html" title="首页">首页</a></li>
+                <li><a href="list.html?o=newDesc&p=1&ch=new&acty=0&cyc=3" target="_blank" title="最新单品">最新单品</a></li>
+                <li><a href="list.html?o=newDesc&p=1&ch=global&acty=0&cbs=1" target="_blank" title="全球购">全球购</a></li>
+                <li><a href="list.html?o=newDesc&p=1&ch=woman&acty=0&fp=30" target="_blank" title="女士">女士</a></li>
+                <li><a href="list.html?o=newDesc&p=1&ch=man&acty=0&fp=20" target="_blank" title="男仕">男仕</a></li>
+                <li><a href="list.html?o=newDesc&p=1&ch=lifestyle&acty=0&ca=9%2C264%2C279%2C290%2C294" target="_blank" title="家居生活">家居生活</a></li>
+                <li><a href="list.html?o=newDesc&p=1&ch=watch&acty=0&ca=10" target="_blank"  title="腕表">腕表</a></li>
                 <li><a href="javascript:void(0)" title="品牌">品牌</a></li>
                 <li><a href="javascript:void(0)" title="Mzine">Mzine</a></li>
             </ul>
@@ -217,20 +219,29 @@
 
     <div class="product_constainer clearfix">
         <div class="product_content clearfix">
+            <!--放大镜效果-->
             <div class="product_window float_l">
+                <div class="product_samll_img float_l">
 
-
+                </div>
+                <div class="product_big_img float_l">
+                    <img src="http://img3.meicicdn.com/u/LvProduct/pic/20180522/1647425b03d92e398bc-800x960.jpg" height="460" style="opacity: 1;">
+                </div>
             </div>
-            <div class="product_information clearfix float_r">
-                <h1><a href="javascript:void(0)">阿玛尼牛仔</a> </h1>
-                <div class="product_alt clearfix">牛皮 男仕 斜挎包</div>
+            <!--产品购买信息-->
+            <div class="product_information clearfix float_l">
+                <div class="product_info_head">
+                    <h1><a href="javascript:void(0)">阿玛尼牛仔</a> </h1>
+                    <div class="product_alt clearfix">牛皮 男仕 斜挎包</div>
 
-                <div class="product_sale  clearfix">
-                    <span class="now_price">￥<em>1109.00</em></span>
-                    <span class="del_price">￥1975.00</span>
+                    <div class="product_sale  clearfix">
+                        <span class="now_price">￥<em>1109.00</em></span>
+                        <span class="del_price">￥1975.00</span>
+                    </div>
                 </div>
 
-                <div class="product_color">
+                <!--产品颜色分类-->
+                <div class="product_color clearfix">
                     <table width="100%">
                         <colgroup>
                             <col width="55px">
@@ -240,8 +251,8 @@
                             <th>颜色</th>
                             <td>
                                 <ul class="clearfix">
-                                    <li class="colorcur" color-id="1" title="黑色">
-                                        <div class="listColor">黑色</div>
+                                    <li class="colorlist" color-id="1" title="黑色">
+                                        <div >黑色</div>
                                     </li>
                                 </ul>
                             </td>
@@ -249,9 +260,9 @@
                         </tbody>
                     </table>
                 </div>
-
+                <!--产品尺码信息非服装信息隐藏-->
                 <div class="product_size" style="padding: 15px 0;">
-                    <table width="100%" style="display:none;">
+                    <table>
                         <colgroup>
                             <col width="55px">
                         </colgroup>
@@ -259,14 +270,27 @@
                         <tr>
                             <th>尺码</th>
                             <td>
-                                <ul class="clearfix"></ul>
+                                <ul class="clearfix">
+                                    <li class="" size-id="12722" style="cursor: pointer;">
+                                        <a href="javascript:void(0);">S</a>
+                                        <div class="size_tip" style="display: none;"><span>对应中国尺码“S”</span></div>
+                                    </li>
+                                    <li class="cur" size-id="12738" style="cursor: pointer;">
+                                        <a href="javascript:void(0);">M</a>
+                                        <div class="size_tip" style="display: none;"><span>对应中国尺码“M”</span></div>
+                                    </li>
+                                    <li class="" size-id="12754" style="cursor: pointer;">
+                                        <a href="javascript:void(0);">L</a>
+                                        <div class="size_tip" style="display: none;"><span>对应中国尺码“L”</span></div>
+                                    </li>
+                                </ul>
                             </td>
                         </tr>
+
                         <tr>
                             <td></td>
-                            <td><span class="proshowsize">查看尺码说明</span></td>
+                            <td><span class="product_size_inform">查看尺码说明</span></td>
                         </tr>
-                        <tr></tr>
                         </tbody>
                     </table>
                 </div>
@@ -274,29 +298,474 @@
                 <div class="product_btn clearfix">
                     <input id="skuId"  type="hidden" >
                     <button type="button" class="btn_pay">即刻购买</button>
-                    <button type="button" class="btn_add">加入购物袋</button>
-
+                    <button type="button" id="addBag" class="btn_add addShopBag">加入购物袋</button>
                     <div class="product_collect">
                         <!--是否收藏-->
-                        <a title="加入收藏" class="pro_collect_y" href="javascript:void(0);" onclick="addcollect(this); _hmt.push(['_trackEvent', '商品详细页', '标签', '加入收藏']);"></a>
+                        <a title="加入收藏"  href="javascript:void(0);"></a>
                     </div>
                     <div class="product_share">
                     </div>
                 </div>
 
-                <div class="product_arrival_time">
+                <div class="product_tip">
                     <ul>
                         <li class="clearfix">
-                            <span class="arrival_time">到货时间</span>
-                            <span class="arrival_time">该商品到货时间预计5-10个工作日</span>
+                            <span class="tip_tit">到货时间</span>
+                            <span class="tip_con">该商品到货时间预计5-10个工作日</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="tip_tit">退货说明</span>
+                            <span class="tip_con">若该商品无质量问题不支持退换货</span>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+        <!--热门产品展示-->
+        <div class="product_hot product_tab">
+            <div class="product_tab_title">
+                <div class="tab_title">
+                    Product
+                    <span>Recommend</span>
+                </div>
+                <p>相关推荐</p>
+            </div>
+            <div class="product_sroll clearfix">
+                <div class="sroll_prev swiper-button-prev">
+                    <span class="sroll_btn_prev hot_btn_prev"></span>
+                </div>
+                <div class="sroll_next swiper-button-next">
+                    <span class="sroll_btn_next hot_btn_next"></span>
+                </div>
+                <div class="product_hot_content product_sroll_content swiper-content">
+
+                    <ul class="swiper-wrapper clearfix">
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a target="_blank">
+                                <img src="img/17053259e9bc5c8ef93-160x192.jpg">
+                                <br>
+                                <div class="hot_information">
+                                    <span class="hot_t">Prada 普拉达</span><br>
+                                    <span class="hot_m">￥棉 弹性纤维 男士 短袖POLO衫</span><br>
+                                    <span class="hot_m">￥2940.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/79457/saleid/76919.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','79457','','web_product_detail');">
+                                <img src="img/h-079457-1.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">Gucci 古驰</span><br>
+                                    <span class="prn_m">男仕 棉质 白色 短袖POLO衫</span><br>
+                                    <span class="prn_m">3489.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/373077/saleid/187847.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','373077','','web_product_detail');">
+                                <img src="img/15248000115ae29a0bbcd88-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">GCDS </span><br>
+                                    <span class="prn_m">涤纶 男士 双色游泳短裤</span><br>
+                                    <span class="prn_m">970.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/371669/saleid/187233.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','371669','','web_product_detail');">
+                                <img src="img/15227423775ac3346935197-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">Dsquared2 D二次方</span><br>
+                                    <span class="prn_m">棉质 男士 牛仔裤</span><br>
+                                    <span class="prn_m">2950.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/88265/saleid/85727.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','88265','','web_product_detail');">
+                                <img src="img/h-088265-1.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">Marcelo Burlon 马尔塞洛比隆</span><br>
+                                    <span class="prn_m">男仕 全棉 黑色 马甲/背心</span><br>
+                                    <span class="prn_m">1189.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/367387/saleid/185534.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','367387','','web_product_detail');">
+                                <img src="img/1603215ac3354956e34-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">Emporio Armani 安普里奥·阿玛尼</span><br>
+                                    <span class="prn_m">【新品上市】苹果绿男士短袖Polo衫</span><br>
+                                    <span class="prn_m">800.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/328585/saleid/169516.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','328585','','web_product_detail');">
+                                <img src="img/14524059feb538ab298-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">IDEAGE </span><br>
+                                    <span class="prn_m">IDEAGE/艾迪芝 美国潮牌 个性3D机器人印花中性短袖T恤</span><br>
+                                    <span class="prn_m">880.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/369943/saleid/186452.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','369943','','web_product_detail');">
+                                <img src="img/1405435ac319b705edd-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">Givenchy 纪梵希</span><br>
+                                    <span class="prn_m">【新品上市】白色印花男士短袖T恤</span><br>
+                                    <span class="prn_m">2699.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/328597/saleid/169519.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','328597','','web_product_detail');">
+                                <img src="img/14373759feb1b169c5b-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">IDEAGE </span><br>
+                                    <span class="prn_m">IDEAGE/艾迪芝 美国潮牌 不规则个性印花中性短袖T恤</span><br>
+                                    <span class="prn_m">780.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="img//169518.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','328595','','web_product_detail');">
+                                <img src="img//14421059feb2c202cac-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">IDEAGE </span><br>
+                                    <span class="prn_m">IDEAGE/艾迪芝 美国潮牌 纱网拼接几何图案中性短袖T恤</span><br>
+                                    <span class="prn_m">880.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/362787/saleid/183867.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','362787','','web_product_detail');">
+                                <img src="img/15226590005ac1eeb851480-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">Marcelo Burlon 马尔塞洛比隆</span><br>
+                                    <span class="prn_m">牛皮 男士 凉拖/鞋</span><br>
+                                    <span class="prn_m">1010.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/362765/saleid/183862.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','362765','','web_product_detail');">
+                                <img src="img/15226589945ac1eeb2135e3-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">Marcelo Burlon 马尔塞洛比隆</span><br>
+                                    <span class="prn_m">牛皮 男士 凉拖/鞋</span><br>
+                                    <span class="prn_m">950.00</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="product_float_block">
+            <div class="product_siderTop">
+                <ul class="product_sider_nav float_l">
+                    <li class="curr">商品详情</li>
+                    <li>商品尺寸</li>
+                    <li>配送及售后</li>
+                </ul>
+
+                <div class="product_sider_btn">
+                    <div class="product_btn float_r">
+                        <button id="btn-shopping2" class="btn_add_shopping" >即刻购买</button>
+                        <button id="btn-shopping1"  class="btn_buy_now addShopBag">加入购物袋</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="production clearfix">
+
+            <!--商品信息-->
+            <div class="product_details product_tab">
+                <div class="product_tab_title">
+                    <div class="tab_title">
+                        Product
+                        <span>Information</span>
+                    </div>
+                    <p>商品信息</p>
+                </div>
+                <div class="product_table_constainer">
+                    <table class="product_table" width="100%">
+                        <colgroup>
+                            <col width="70px">
+                            <col width="195px">
+                            <col width="70px">
+                            <col width="195px">
+                            <col width="70px">
+                            <col width="195px">
+                            <col width="70px">
+                            <col width="195px">
+                        </colgroup>
+                        <tbody><tr>
+                            <th>美西编号</th><td class="production_sku">376189</td>
+                            <th>货　　号</th><td>L3.689.4.53.6</td>
+                            <th>产　　地</th><td>瑞士</td>
+                            <th>年　　份</th><td>2018</td>
+                        </tr>
+                        <tr>
+                            <th>适用人群</th><td>男士</td>
+                            <th>颜　　色</th><td class="production_color">银色</td>
+                            <th>季　　节</th><td>春夏新款</td>
+                            <th>系　　列</th><td>-</td>
+                        </tr>
+                        <tr><th>材　　质</th><td colspan="7">蓝宝石玻璃</td></tr>
+                        <tr>
+                            <th style="border:none;" valign="top"><div>商品描述</div></th>
+                            <td colspan="7" style="border:none;" valign="top">
+                                <div style="width: 100%;word-break:break-all;padding-top: 16px;">
+                                    浪琴LONGINES-康卡斯系列深度防水夜光石英男表。
+                                    表带材质：钢。
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!--品牌介绍-->
+            <div class="product_story product_tab">
+                <div class="product_tab_title">
+                    <div class="tab_title">
+                        Brand
+                        <span>Story</span>
+                    </div>
+                    <p>品牌故事</p>
+                </div>
+                <div class="story_container">
+                    <table width="100%">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="story_content">
+                                    <p>浪琴(Longines)手表品牌源于1832年瑞士圣耶米山谷(Saint-Imier)，拥有175年的悠久历史。浪琴(Longines)手表以飞翼沙漏作为品牌的标志，是一个集传统、优雅和运动于一体的专业钟表制造商。作为长期以来世界田径锦标赛的计时器和国际联合会的合作伙伴，浪琴(Longines)手表以其优雅的时计而闻名全球。</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="brand_info">
+                                    <div class="brand_line"></div>
+                                    <img src="http://img.meicicdn.com/upload/image/brand/logo/66.jpg">
+                                    <a class="more_brand" href="" >查看更多品牌商品</a>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!--商品详情-->
+            <div class="product_img product_tab">
+                <div class="product_tab_title">
+                    <div class="tab_title">
+                        Product
+                        <span>Details</span>
+                    </div>
+                    <p> 商品详情</p>
+                </div>
+                <div class="product_img">
+                    <ul class="clearfix">
+                        <li>
+                            <img src="http://img3.meicicdn.com/u/LvProduct/pic/20180517/1642565afd4090eff33-800x960.jpg" width="485">
+                        </li>
+                        <li>
+                            <img src="http://img3.meicicdn.com/u/LvProduct/pic/20180517/1642575afd40913b9d5-800x960.jpg" width="485">
+                        </li>
+                        <li>
+                            <img src="http://img3.meicicdn.com/u/LvProduct/pic/20180517/1642575afd40919246c-800x960.jpg" width="485">
+                        </li>
+                        <li>
+                            <img src="http://img3.meicicdn.com/u/LvProduct/pic/20180517/1642585afd409266ffb-800x960.jpg" width="485">
+                        </li>
+                        <li>
+                            <img src="http://img3.meicicdn.com/u/LvProduct/pic/20180517/1642585afd4092d4024-800x960.jpg" width="485">
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!--猜你喜欢-->
+        <div class="product_like product_tab">
+            <div class="product_tab_title">
+                <div class="tab_title">
+                    Guess
+                    <span>Your Like</span>
+                </div>
+                <p>
+                    猜你喜欢</p>
+            </div>
+            <div class="product_sroll clearfix ">
+                <div class="sroll_prev swiper-button-prev">
+                    <span class="sroll_btn_prev hoe_btn_prev"></span>
+                </div>
+                <div class="sroll_next swiper-button-next">
+                    <span class="sroll_btn_next like_btn_next"></span>
+                </div>
+                <div class="product_sroll_content product_like_content">
+
+                    <ul class="swiper-wrapper clearfix">
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a target="_blank">
+                                <img src="img/17053259e9bc5c8ef93-160x192.jpg">
+                                <br>
+                                <div class="hot_information">
+                                    <span class="hot_t">Prada 普拉达</span><br>
+                                    <span class="prn_m">棉 弹性纤维 男士 短袖POLO衫</span><br>
+                                    <span class="prn_m">￥2940.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/79457/saleid/76919.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','79457','','web_product_detail');">
+                                <img src="img/h-079457-1.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">Gucci 古驰</span><br>
+                                    <span class="prn_m">男仕 棉质 白色 短袖POLO衫</span><br>
+                                    <span class="prn_m">￥3489.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/373077/saleid/187847.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','373077','','web_product_detail');">
+                                <img src="img/15248000115ae29a0bbcd88-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">GCDS </span><br>
+                                    <span class="prn_m">涤纶 男士 双色游泳短裤</span><br>
+                                    <span class="prn_m">￥970.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/371669/saleid/187233.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','371669','','web_product_detail');">
+                                <img src="img/15227423775ac3346935197-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">Dsquared2 D二次方</span><br>
+                                    <span class="prn_m">棉质 男士 牛仔裤</span><br>
+                                    <span class="prn_m">￥2950.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/88265/saleid/85727.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','88265','','web_product_detail');">
+                                <img src="img/h-088265-1.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">Marcelo Burlon 马尔塞洛比隆</span><br>
+                                    <span class="prn_m">男仕 全棉 黑色 马甲/背心</span><br>
+                                    <span class="prn_m">￥1189.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/367387/saleid/185534.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','367387','','web_product_detail');">
+                                <img src="img/1603215ac3354956e34-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">Emporio Armani 安普里奥·阿玛尼</span><br>
+                                    <span class="prn_m">【新品上市】苹果绿男士短袖Polo衫</span><br>
+                                    <span class="prn_m">￥800.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/328585/saleid/169516.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','328585','','web_product_detail');">
+                                <img src="img/14524059feb538ab298-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">IDEAGE </span><br>
+                                    <span class="prn_m">IDEAGE/艾迪芝 美国潮牌 个性3D机器人印花中性短袖T恤</span><br>
+                                    <span class="prn_m">￥880.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/369943/saleid/186452.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','369943','','web_product_detail');">
+                                <img src="img/1405435ac319b705edd-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">Givenchy 纪梵希</span><br>
+                                    <span class="prn_m">【新品上市】白色印花男士短袖T恤</span><br>
+                                    <span class="prn_m">￥2699.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/328597/saleid/169519.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','328597','','web_product_detail');">
+                                <img src="img/14373759feb1b169c5b-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">IDEAGE </span><br>
+                                    <span class="prn_m">IDEAGE/艾迪芝 美国潮牌 不规则个性印花中性短袖T恤</span><br>
+                                    <span class="prn_m">￥780.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="img//169518.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','328595','','web_product_detail');">
+                                <img src="img//14421059feb2c202cac-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">IDEAGE </span><br>
+                                    <span class="prn_m">IDEAGE/艾迪芝 美国潮牌 纱网拼接几何图案中性短袖T恤</span><br>
+                                    <span class="prn_m">￥880.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/362787/saleid/183867.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','362787','','web_product_detail');">
+                                <img src="img/15226590005ac1eeb851480-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">Marcelo Burlon 马尔塞洛比隆</span><br>
+                                    <span class="prn_m">牛皮 男士 凉拖/鞋</span><br>
+                                    <span class="prn_m">￥1010.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide swiper-no-swiping">
+                            <a title="" href="/product/detail/id/362765/saleid/183862.html" target="_blank" onclick="visitPagePlace('web_product_detail_recommend','362765','','web_product_detail');">
+                                <img src="img/15226589945ac1eeb2135e3-160x192.jpg" alt=""><br>
+                                <div class="hot_information">
+                                    <span class="hot_t">Marcelo Burlon 马尔塞洛比隆</span><br>
+                                    <span class="prn_m">牛皮 男士 凉拖/鞋</span><br>
+                                    <span class="prn_m">￥950.00</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
 
     </div>
-
+    <div class="sideright_fixed">
+        <ul>
+            <li class="consultApp">
+                <a class="consult_app" href="/app" title="美西APP"><em></em></a>
+                <div class="consult_app_m" style="display: none;">
+                    <div class="consult_app_sj"></div>
+                    <div class="consult_app_code">
+                        <img src="http://img.meicicdn.com/skin/df/ewm_indexTop_1.png">
+                    </div>
+                </div>
+            </li>
+            <li><a class="online" href="javascript:void(0);" title="在线咨询"><em></em></a></li>
+            <li><a class="QQ"  href="javascript:void(0);"><em></em></a></li>
+            <li><a class="go_top" href="javascript:void(0);" title="返回顶部"><em></em></a></li>
+        </ul>
+    </div>
 
     <div class="footer">
         <div class="footer_top">

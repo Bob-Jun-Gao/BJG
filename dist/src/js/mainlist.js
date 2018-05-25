@@ -4,7 +4,7 @@ define([
     "js/list_siderbar",
     "js/list_ajax"
 ],function(CookieMX,Nav,Siderbar,ListData){
-    CookieMX.setcookie();
+    CookieMX.init();
     Nav.show();
     Nav.Nav_show();
     Siderbar.init();

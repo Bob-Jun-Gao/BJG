@@ -1,9 +1,9 @@
-html,body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,dd,span,i,img,a,input{margin: 0px;padding: 0px;}
+html,body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,dd,tr,td,th,span,i,img,a,input{margin: 0px;padding: 0px;}
 body{font:12px "微软雅黑",Helvetica,sans-serif; background-color:#fff; color:#555;line-height: 1.5}
 h1,h2,h3,h4,h5,h6{font-weight: normal;}
 ul,ol,li,dl,dt,dd{list-style: none;}
 img{border: 0px;}
-a{ text-decoration: none; color: #555;}
+a{ text-decoration: none; color: #555;cursor: pointer;}
 em,i{ font-style:normal}
 input{outline: none;}
 /*工具类*/

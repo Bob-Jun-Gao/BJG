@@ -1,0 +1,73 @@
+{
+    "status": 1,
+    "info": "\u6570\u636e\u8bf7\u6c42\u6210\u529f",
+    "msg": "\u6570\u636e\u8bf7\u6c42\u6210\u529f",
+    "data": {
+        "spu": {
+            "id": "189061",
+            "supplier_id": "403",
+            "brand_id": "66", "category_id":
+            "254",
+            "name": "\u84dd\u5b9d\u77f3\u73bb\u7483 \u7537\u58eb \u673a\u68b0\u8868",
+            "is_cbs": "0",
+            "fit_person": "20",
+            "years": "2018",
+            "category_ids": "10,252,254",
+            "sku_num_sales": "1",
+            "size_chart": "",
+            "measure": [],
+            "imgs": [""],
+            "hide_color": 0,
+            "brand_name": "\u6d6a\u7434",
+            "brand_ename": "Longines",
+            "brand_img_url": "http:\/\/img.meicicdn.com\/upload\/image\/brand\/p\/66.jpg",
+            "brand_logo_url": "http:\/\/img.meicicdn.com\/upload\/image\/brand\/logo\/66.jpg",
+            "brand_disable": 0,
+            "cate_name": "\u673a\u68b0\u8868",
+            "cate_ename": "",
+            "default_sku": "376072",
+            "default_color": "1",
+            "default_szie": "0",
+            "colors": ["1"],
+            "skus": {
+                "376072": {
+                    "id": "376072",
+                    "spu": "189061",
+                    "color_id": "1",
+                    "size_id": "0",
+                    "price": "17170.00",
+                    "quantity": "1",
+                    "status": "1",
+                    "rate": "0.2000",
+                    "sku": "376072",
+                    "quantity_cache": "1",
+                    "favNum": 1086,
+                    "isFav": 0,
+                    "img": [
+                        "http:\/\/img3.meicicdn.com\/u\/LvProduct\/pic\/20180517\/1410465afd1ce62fd0b-800x960.jpg",
+                        "http:\/\/img3.meicicdn.com\/u\/LvProduct\/pic\/20180517\/1410465afd1ce672746-800x960.jpg",
+                        "http:\/\/img3.meicicdn.com\/u\/LvProduct\/pic\/20180517\/1410465afd1ce6c15a7-800x960.jpg",
+                        "http:\/\/img3.meicicdn.com\/u\/LvProduct\/pic\/20180517\/1410475afd1ce71e1e3-800x960.jpg",
+                        "http:\/\/img3.meicicdn.com\/u\/LvProduct\/pic\/20180517\/1410475afd1ce77d3c9-800x960.jpg"
+                    ],
+                    "is_club_price": 0,
+                    "urlKey": "\/product\/detail\/id\/376072\/saleid\/189061.html"
+                }
+            },
+            "category_id_one": "10"
+        },
+        "colorSize": {
+            "sku": {
+                "1": "376072"
+            }
+        },
+        "colors": {
+            "1": {
+                "id": "1",
+                "value": "\u9ed1\u8272",
+                "ename": "black"
+            }
+        },
+        "sizes": []
+    }
+}

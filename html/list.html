@@ -15,11 +15,13 @@
             <div class="header_bar_left float_l">
                 <div class="header_hotline float_l">
                     <i class="hotline"></i>
-                    <span class="header_box float_r"><a href="javascript:void(0)">4000-250-xxx</a></span>
+                    <span class="header_box float_r"><a href="javascript:void(0)">4000-250-630</a></span>
                 </div>
                 <div class="header_app float_l">
-                    <i class="app float_l"></i>
-                    <span class="header_box jqshow_icon float_r"><a href="javascript:void(0)">下载美西APP</a></span>
+                    <span class="header_box jqshow_icon float_r">
+                        <i class="app float_l"></i>
+                        <a href="javascript:void(0)">下载美西APP</a>
+                    </span>
                     <div class="header_app_code jqhidde_icon">
                         <div class="code_icon"></div>
                         <div class="code">
@@ -39,7 +41,7 @@
                 </div>
                 <div class="header_shoppingbag float_r">
                     <i class="shoppingbag"></i>
-                    <span><a href="javascript:void(0)">购物袋</a></span>
+                    <span><a id="ShopBag" href="shoppingBag.html" target="_blank">购物袋</a></span>
                 </div>
 
             </div>
@@ -55,13 +57,13 @@
     <div class="header_bottom">
         <div class="header_nav">
             <ul>
-                <li><a href="javascript:void(0)" title="首页">首页</a></li>
-                <li><a href="javascript:void(0)" title="最新单品">最新单品</a></li>
-                <li><a href="javascript:void(0)" title="全球购">全球购</a></li>
-                <li><a href="javascript:void(0)" title="女士">女士</a></li>
-                <li><a href="javascript:void(0)" title="男仕">男仕</a></li>
-                <li><a href="javascript:void(0)" title="家居生活">家居生活</a></li>
-                <li><a href="javascript:void(0)" title="腕表">腕表</a></li>
+                <li><a href="index.html" title="首页">首页</a></li>
+                <li><a href="list.html?o=newDesc&p=1&ch=new&acty=0&cyc=3" target="_blank" title="最新单品">最新单品</a></li>
+                <li><a href="list.html?o=newDesc&p=1&ch=global&acty=0&cbs=1" target="_blank" title="全球购">全球购</a></li>
+                <li><a href="list.html?o=newDesc&p=1&ch=woman&acty=0&fp=30" target="_blank" title="女士">女士</a></li>
+                <li><a href="list.html?o=newDesc&p=1&ch=man&acty=0&fp=20" target="_blank" title="男仕">男仕</a></li>
+                <li><a href="list.html?o=newDesc&p=1&ch=lifestyle&acty=0&ca=9,264,279,290,294" target="_blank" title="家居生活">家居生活</a></li>
+                <li><a href="list.html?o=newDesc&p=1&ch=watch&acty=0&ca=10" target="_blank"  title="腕表">腕表</a></li>
                 <li><a href="javascript:void(0)" title="品牌">品牌</a></li>
                 <li><a href="javascript:void(0)" title="Mzine">Mzine</a></li>
             </ul>
@@ -224,22 +226,38 @@
                         <span class="sideritem_open add_icon float_r">+</span>
                     </div>
                     <div class="sider_item_body">
-                            <ul class="sidebar_secondary">
+                        <ul class="sidebar_secondary">
                                 <li class="sidebar_secondary_head">
                                     <a href="javascript:void(0)"><em class="click_em"></em><span>包袋</span></a>
                                     <ul class="sidebar_secondary_body">
                                         <li><a href="javascript:void(0)"><em class="check_em"></em><span>选择全部</span></a></li>
-                                        <li><a href="javascript:void(0)"><em class="check_em"></em><span>选择全部</span></a></li>
-                                        <li><a href="javascript:void(0)"><em class="check_em"></em><span>选择全部</span></a></li>
-                                        <li><a href="javascript:void(0)"><em class="check_em"></em><span>选择全部</span></a></li>
-                                        <li><a href="javascript:void(0)"><em class="check_em"></em><span>选择全部</span></a></li>
-                                        <li><a href="javascript:void(0)"><em class="check_em"></em><span>选择全部</span></a></li>
-                                        <li><a href="javascript:void(0)"><em class="check_em"></em><span>选择全部</span></a></li>
-                                        <li><a href="javascript:void(0)"><em class="check_em"></em><span>选择全部</span></a></li>
+                                        <li data-id="13"><a href="javascript:void(0)"><em class="check_em"></em><span>手提包 Totes</span></a></li>
+                                        <li data-id="14"><a href="javascript:void(0)"><em class="check_em"></em><span>单肩包 Shoulder Bags</span></a></li>
+                                        <li data-id="15"><a href="javascript:void(0)"><em class="check_em"></em><span>斜挎包 Messenger Bags</span></a></li>
+                                        <li data-id="16"><a href="javascript:void(0)"><em class="check_em"></em><span>手拿包 Clutch Bags</span></a></li>
+                                        <li data-id="27"><a href="javascript:void(0)"><em class="check_em"></em><span>双肩包 Backpack</span></a></li>
                                     </ul>
                                 </li>
                                 <li class="sidebar_secondary_head">
                                     <a href="javascript:void(0)"><em class="click_em"></em><span>包袋</span></a>
+
+
+
+                                    <ul class="ls_sidebar_m" style="display: block;">
+                                        <li><a href="javascript:void(0);">选择全部<em class="check_em"></em></a></li>
+                                        <li data-id="4" class="ca_item "><a href="javascript:void(0);">饰品 Jewelry<em class="check_em "></em></a></li>
+                                        <li data-id="5" class="ca_item "><a href="javascript:void(0);">太阳眼镜 Sunglasses<em class="check_em "></em></a></li>
+                                        <li data-id="6" class="ca_item "><a href="javascript:void(0);">腰带 Belts<em class="check_em "></em></a></li>
+                                        <li data-id="7" class="ca_item "><a href="javascript:void(0);">帽子 Hats &amp; Gloves<em class="check_em "></em></a></li>
+                                        <li data-id="28" class="ca_item "><a href="javascript:void(0);">小配件 Small Acc.<em class="check_em "></em></a></li>
+                                        <li data-id="113" class="ca_item "><a href="javascript:void(0);">手套 Gloves<em class="check_em "></em></a></li>
+                                        <li data-id="124" class="ca_item "><a href="javascript:void(0);">短钱包 Short Wallets<em class="check_em "></em></a></li>
+                                        <li data-id="125" class="ca_item "><a href="javascript:void(0);">长钱包 Long Wallets<em class="check_em "></em></a></li>
+                                        <li data-id="180" class="ca_item "><a href="javascript:void(0);">领带 Ties<em class="check_em "></em></a></li>
+                                        <li data-id="181" class="ca_item "><a href="javascript:void(0);">围巾 Scarf<em class="check_em "></em></a></li>
+                                        <li data-id="188" class="ca_item "><a href="javascript:void(0);">卡夹 Card Holders<em class="check_em "></em></a></li>
+                                    </ul>
+
                                     <ul class="sidebar_secondary_body">
                                         <li><a href="javascript:void(0)"><em class="check_em"></em><span>选择全部</span></a></li>
                                         <li><a href="javascript:void(0)"><em class="check_em"></em><span>选择全部</span></a></li>
@@ -279,7 +297,7 @@
                                 </li>
                                 
                             </ul>
-                        </div>
+                    </div>
                 </div>
 
                 <div class="sidebar_item">
@@ -443,6 +461,22 @@
         </div>
     </div>
 
+    <div class="sideright_fixed">
+        <ul>
+            <li class="consultApp">
+                <a class="consult_app" href="/app" title="美西APP"><em></em></a>
+                <div class="consult_app_m" style="display: none;">
+                    <div class="consult_app_sj"></div>
+                    <div class="consult_app_code">
+                        <img src="http://img.meicicdn.com/skin/df/ewm_indexTop_1.png">
+                    </div>
+                </div>
+            </li>
+            <li><a class="online" href="javascript:void(0);" title="在线咨询"><em></em></a></li>
+            <li><a class="QQ"  href="javascript:void(0);"><em></em></a></li>
+            <li><a class="go_top" href="javascript:void(0);" title="返回顶部"><em></em></a></li>
+        </ul>
+    </div>
 
     <div class="footer">
         <div class="footer_top">
